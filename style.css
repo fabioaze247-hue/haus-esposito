@@ -1691,8 +1691,10 @@ footer{
 /* WEBSITE UNDER MAINTENANCE     */
 /* ============================= */
 
+
 .maintenance-page {
     min-height: 100vh;
+    min-height: 100svh;
     background: #111;
     color: #fff;
 
@@ -1702,7 +1704,10 @@ footer{
 
     text-align: center;
     padding: 40px 20px;
+
+    -webkit-text-size-adjust: 100%;
 }
+
 
 .maintenance-container {
     width: min(700px, 90%);
