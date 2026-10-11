@@ -1840,6 +1840,7 @@ body {
 
 .maintenance-stud {
     width: 100%;
+    max-width: 680px;
 
     margin: 0 auto;
     padding: 0 10px;
@@ -1848,39 +1849,44 @@ body {
 }
 
 .maintenance-stud h2 {
-    margin: 0 0 4px;
+    margin: 0 0 6px;
 
-    color: #c7a86d;
+    color: #d6b46a;
 
-    font-size: 29px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(36px, 6vw, 58px);
     font-weight: 700;
 
-    line-height: 1.2;
+    line-height: 1.1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .maintenance-stud h3 {
-    margin: 0 0 8px;
+    margin: 0 0 12px;
 
-    color: #c7a86d;
+    color: #d6b46a;
 
-    font-size: 15px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(16px, 2.5vw, 25px);
     font-weight: 700;
 
-    line-height: 1.4;
+    line-height: 1.3;
     letter-spacing: 0.5px;
+    text-transform: uppercase;
 }
 
 .maintenance-stud p {
-    max-width: 460px;
+    max-width: 520px;
 
     margin: 0 auto;
 
     color: #dedede;
 
-    font-size: 15px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 19px;
     line-height: 1.55;
 }
-
 
 /* ========================================
    10. CONTACTKAART
@@ -1991,12 +1997,19 @@ body {
 ======================================== */
 
 .maintenance-line {
-    width: 65px;
+    width: 150px;
     height: 2px;
 
-    margin: 23px auto;
+    margin: 26px auto;
 
-    background: #c7a86d;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #c7a052 15%,
+        #e5ca83 50%,
+        #c7a052 85%,
+        transparent
+    );
 }
 
 
