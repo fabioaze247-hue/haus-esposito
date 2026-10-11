@@ -13,7 +13,7 @@ html{
 }
 
 body{
-    font-family:'Segoe UI',sans-serif;
+    font-family:Calibri, Arial, sans-serif;
     background:#f5f5f5;
     color:#1a1a1a;
     overflow-x:hidden;
@@ -1687,217 +1687,281 @@ footer{
 
 }
 
-/* ============================= */
-/* WEBSITE UNDER MAINTENANCE     */
-/* ============================= */
-
+/* ========================================
+   WEBSITE UNDER MAINTENANCE
+======================================== */
 
 .maintenance-page {
     min-height: 100vh;
     min-height: 100svh;
-    background: #111;
-    color: #fff;
+    margin: 0;
+    padding: 30px 20px;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    text-align: center;
-    padding: 40px 20px;
+    background: #000;
+    color: #fff;
 
-    -webkit-text-size-adjust: 100%;
+    font-family: Calibri, Arial, sans-serif;
+    text-align: center;
+
+    overflow-x: hidden;
 }
 
+.maintenance-page *,
+.maintenance-page *::before,
+.maintenance-page *::after {
+    box-sizing: border-box;
+    font-family: inherit;
+}
 
 .maintenance-container {
-    width: min(700px, 90%);
+    width: 100%;
+    max-width: 600px;
+    padding: 25px 0;
+
+    background: linear-gradient(
+        180deg,
+        #111 0%,
+        #080808 100%
+    );
 }
+
+/* LOGO */
 
 .maintenance-logo {
-    width: 110px;
-    height: 110px;
+    display: block;
+    width: 75px;
+    height: 75px;
 
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 50%;
 
-    margin-bottom: 30px;
-
-    border: 2px solid #c7a86d;
+    margin: 0 auto 12px;
 }
+
+/* KLEINE TITEL */
 
 .maintenance-eyebrow {
     display: block;
 
     color: #c7a86d;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
 
-    font-size: 0.85rem;
-    font-weight: 600;
-
-    letter-spacing: 4px;
-
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
+/* HOOFDTITEL */
+
 .maintenance-container h1 {
-    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    max-width: 500px;
+    margin: 0 auto 12px;
 
+    font-size: clamp(30px, 7vw, 44px);
     line-height: 1.1;
-
-    margin-bottom: 25px;
-
     font-weight: 700;
 }
 
-.maintenance-text {
-    font-size: 1.3rem;
+/* BESCHRIJVING */
 
-    margin-bottom: 15px;
+.maintenance-text {
+    margin-bottom: 10px;
 
     color: #fff;
+    font-size: 16px;
 }
 
 .maintenance-subtext {
-    max-width: 550px;
+    max-width: 420px;
+    margin: 0 auto 22px;
 
-    margin: 0 auto;
-
-    color: #bdbdbd;
-
-    font-size: 1rem;
-
-    line-height: 1.7;
+    color: #aaa;
+    font-size: 13px;
+    line-height: 1.6;
 }
 
+/* ========================================
+   STUD DOG
+======================================== */
 
-/* ============================= */
-/* MAINTENANCE CONTACT           */
-/* ============================= */
+.maintenance-stud {
+    padding: 0 10px;
+}
+
+.maintenance-stud h2 {
+    margin: 10px 0 2px;
+
+    color: #c7a86d;
+    font-size: clamp(25px, 6vw, 34px);
+    line-height: 1.15;
+}
+
+.maintenance-stud h3 {
+    margin-bottom: 8px;
+
+    color: #c7a86d;
+    font-size: clamp(12px, 3.5vw, 16px);
+}
+
+.maintenance-stud p {
+    max-width: 380px;
+    margin: 0 auto;
+
+    color: #eee;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* ========================================
+   CONTACTKAART
+======================================== */
 
 .maintenance-contact {
-    margin: 40px auto 0;
-    padding: 30px;
+    max-width: 500px;
+    margin: 18px auto 0;
+    padding: 20px;
 
-    max-width: 550px;
-
-    background: #181818;
-
-    border: 1px solid #2a2a2a;
-    border-radius: 15px;
+    background: #151515;
+    border: 1px solid #252525;
+    border-radius: 10px;
 
     text-align: center;
 }
 
 .maintenance-contact h2 {
+    margin-bottom: 8px;
+
     color: #c7a86d;
-
-    font-size: 1.5rem;
-
-    margin-bottom: 12px;
+    font-size: 18px;
 }
 
 .maintenance-contact > p {
-    color: #bdbdbd;
+    margin-bottom: 12px;
 
-    font-size: 0.95rem;
-    line-height: 1.6;
-
-    margin-bottom: 25px;
+    color: #aaa;
+    font-size: 12px;
+    line-height: 1.5;
 }
+
+/* E-MAIL EN TELEFOON */
 
 .maintenance-contact-info {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .maintenance-contact-info a {
     display: flex;
+    flex: 1;
+    min-width: 0;
+
     flex-direction: column;
+    align-items: center;
+    gap: 5px;
 
-    min-width: 200px;
+    padding: 12px 6px;
 
-    padding: 15px;
+    background: #090909;
+    border: 1px solid #292929;
+    border-radius: 7px;
 
     color: #fff;
+    font-size: 11px;
     text-decoration: none;
 
-    background: #111;
+    overflow-wrap: anywhere;
+    transition: .3s;
+}
 
-    border: 1px solid #333;
-    border-radius: 10px;
-
-    transition: 0.3s;
+.maintenance-contact-info a strong {
+    color: #c7a86d;
+    font-size: 12px;
 }
 
 .maintenance-contact-info a:hover {
     border-color: #c7a86d;
-
-    transform: translateY(-3px);
+    transform: translateY(-2px);
 }
 
-.maintenance-contact-info strong {
-    color: #c7a86d;
-
-    margin-bottom: 5px;
-}
-
-
-/* ============================= */
-/* DIVIDER & FOOTER TEXT         */
-/* ============================= */
+/* ========================================
+   GOUDEN LIJN
+======================================== */
 
 .maintenance-line {
-    width: 80px;
-    height: 2px;
+    width: 50px;
+    height: 1px;
+
+    margin: 16px auto;
 
     background: #c7a86d;
-
-    margin: 35px auto;
 }
+
+/* ========================================
+   FOOTER
+======================================== */
 
 .maintenance-footer {
+    margin-top: 10px;
+
     color: #c7a86d;
-
-    font-size: 0.9rem;
-
-    letter-spacing: 1px;
+    font-size: 10px;
+    line-height: 1.6;
 }
 
-
-/* ============================= */
-/* MOBILE                        */
-/* ============================= */
+/* ========================================
+   MOBIEL
+======================================== */
 
 @media (max-width: 600px) {
 
-    .maintenance-container h1 {
-        font-size: 2.5rem;
+    .maintenance-page {
+        padding: 15px 20px;
+        align-items: center;
     }
 
-    .maintenance-text {
-        font-size: 1.1rem;
-    }
-
-    .maintenance-subtext {
-        font-size: 0.95rem;
+    .maintenance-container {
+        padding: 15px 0;
     }
 
     .maintenance-logo {
-        width: 90px;
-        height: 90px;
+        width: 65px;
+        height: 65px;
+    }
+
+    .maintenance-container h1 {
+        font-size: clamp(29px, 8vw, 36px);
+    }
+
+    .maintenance-text {
+        font-size: 14px;
+    }
+
+    .maintenance-subtext {
+        font-size: 11px;
     }
 
     .maintenance-contact {
-        padding: 25px 20px;
+        padding: 16px 12px;
     }
 
     .maintenance-contact-info {
-        flex-direction: column;
-        gap: 10px;
+        gap: 7px;
     }
 
     .maintenance-contact-info a {
-        min-width: unset;
+        font-size: 10px;
     }
 
+    .maintenance-stud h3 {
+        font-size: 12px;
+    }
+
+    .maintenance-stud p {
+        font-size: 13px;
+    }
 }
