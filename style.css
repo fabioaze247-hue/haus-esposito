@@ -13,7 +13,7 @@ html{
 }
 
 body{
-    font-family:Calibri, Arial, sans-serif;
+    font-family:'Segoe UI',sans-serif;
     background:#f5f5f5;
     color:#1a1a1a;
     overflow-x:hidden;
@@ -406,14 +406,17 @@ header{
     transition:.3s;
 }
 
-.dog-card:hover{
-    transform:translateY(-8px);
+.dog-card:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .15);
 }
 
-.dog-card img{
-    width:100%;
-    height:320px;
-    object-fit:cover;
+.dog-card img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    object-position: center;
 }
 
 .card-content{
@@ -1687,602 +1690,735 @@ footer{
 
 }
 
-/* ========================================
-   1. RESET
-======================================== */
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    min-height: 100%;
-    -webkit-text-size-adjust: 100%;
-}
-
-body {
-    font-family: Calibri, Arial, sans-serif;
-}
-
-
-/* ========================================
-   2. PAGINA
-======================================== */
+/* ============================= */
+/* WEBSITE UNDER MAINTENANCE     */
+/* ============================= */
 
 .maintenance-page {
     min-height: 100vh;
-    min-height: 100svh;
-    width: 100%;
+    background: #111;
+    color: #fff;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    padding: 30px 20px;
-
-    background: #101010;
-    color: #ffffff;
-
     text-align: center;
-    overflow-x: hidden;
+    padding: 40px 20px;
 }
-
-
-/* ========================================
-   3. HOOFDCONTAINER
-======================================== */
 
 .maintenance-container {
-    width: 100%;
-    max-width: 680px;
-
-    margin: auto;
+    width: min(700px, 90%);
 }
-
-
-/* ========================================
-   4. LOGO
-======================================== */
 
 .maintenance-logo {
-    display: block;
+    width: 110px;
+    height: 110px;
 
-    width: 100px;
-    height: 100px;
-
-    margin: 0 auto 24px;
-
-    object-fit: contain;
-    object-position: center;
-
+    object-fit: cover;
     border-radius: 50%;
+
+    margin-bottom: 30px;
+
+    border: 2px solid #c7a86d;
 }
-
-
-/* ========================================
-   5. BRANDNAAM
-======================================== */
 
 .maintenance-eyebrow {
     display: block;
 
-    margin-bottom: 18px;
-
     color: #c7a86d;
 
-    font-family: Calibri, Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 0.85rem;
+    font-weight: 600;
 
     letter-spacing: 4px;
-    line-height: 1.4;
+
+    margin-bottom: 15px;
 }
-
-
-/* ========================================
-   6. HOOFDTITEL
-======================================== */
 
 .maintenance-container h1 {
-    max-width: 650px;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
 
-    margin: 0 auto 20px;
+    line-height: 1.1;
 
-    color: #ffffff;
+    margin-bottom: 25px;
 
-    font-family: Calibri, Arial, sans-serif;
-    font-size: clamp(38px, 6vw, 58px);
     font-weight: 700;
-
-    line-height: 1.08;
-    letter-spacing: -0.5px;
 }
-
-
-/* ========================================
-   7. INTRODUCTIE
-======================================== */
 
 .maintenance-text {
-    margin-bottom: 12px;
+    font-size: 1.3rem;
 
-    color: #ffffff;
+    margin-bottom: 15px;
 
-    font-size: 19px;
-    line-height: 1.5;
-    font-weight: 400;
+    color: #fff;
 }
 
-
-/* ========================================
-   8. EXTRA BESCHRIJVING
-======================================== */
-
 .maintenance-subtext {
-    max-width: 520px;
+    max-width: 550px;
 
-    margin: 0 auto 20px;
+    margin: 0 auto;
 
     color: #bdbdbd;
 
-    font-size: 15px;
-    line-height: 1.65;
+    font-size: 1rem;
+
+    line-height: 1.7;
 }
 
 
-/* ========================================
-   9. WITO - STUD DOG
-======================================== */
-.maintenance-stud {
-    width: 100%;
-    max-width: 680px;
-
-    margin: 0 auto;
-    padding: 0 10px;
-
-    text-align: center;
-}
-
-/* WITO - STUD DOG */
-
-.maintenance-stud h2 {
-    margin: 0 0 4px;
-
-    color: #c9a45b;
-
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(34px, 5.5vw, 58px);
-    font-weight: 700;
-
-    line-height: 1.12;
-    letter-spacing: 0;
-    text-transform: uppercase;
-}
-
-/* OFFICIALLY AVAILABLE FOR STUD SERVICE */
-
-.maintenance-stud h3 {
-    margin: 0 0 12px;
-
-    color: #c9a45b;
-
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(14px, 2.6vw, 25px);
-    font-weight: 700;
-
-    line-height: 1.25;
-    letter-spacing: 0;
-    text-transform: uppercase;
-}
-
-/* Beschrijving */
-
-.maintenance-stud p {
-    max-width: 540px;
-
-    margin: 0 auto;
-
-    color: #dedede;
-
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(15px, 2.2vw, 20px);
-    font-weight: 400;
-
-    line-height: 1.55;
-}
-
-/* ========================================
-   10. CONTACTKAART
-======================================== */
+/* ============================= */
+/* MAINTENANCE CONTACT           */
+/* ============================= */
 
 .maintenance-contact {
-    width: 100%;
-    max-width: 540px;
+    margin: 40px auto 0;
+    padding: 30px;
 
-    margin: 24px auto 0;
-    padding: 24px 25px;
+    max-width: 550px;
 
-    background: #171717;
+    background: #181818;
 
-    border: 1px solid #303030;
-    border-radius: 12px;
+    border: 1px solid #2a2a2a;
+    border-radius: 15px;
 
     text-align: center;
 }
 
 .maintenance-contact h2 {
-    margin-bottom: 10px;
-
     color: #c7a86d;
 
-    font-size: 23px;
-    font-weight: 700;
+    font-size: 1.5rem;
+
+    margin-bottom: 12px;
 }
 
 .maintenance-contact > p {
-    max-width: 440px;
-
-    margin: 0 auto 20px;
-
     color: #bdbdbd;
 
-    font-size: 14px;
+    font-size: 0.95rem;
     line-height: 1.6;
+
+    margin-bottom: 25px;
 }
-
-
-/* ========================================
-   11. CONTACTGEGEVENS
-======================================== */
 
 .maintenance-contact-info {
     display: flex;
     justify-content: center;
-    align-items: stretch;
-
-    gap: 12px;
-    width: 100%;
+    gap: 20px;
 }
 
-.maintenance-contact-info .contact-item {
+.maintenance-contact-info a {
     display: flex;
-    flex: 1;
-    min-width: 0;
-
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
-    gap: 6px;
+    min-width: 200px;
 
-    padding: 15px 10px;
+    padding: 15px;
 
-    background: #0d0d0d;
-
-    border: 1px solid #303030;
-    border-radius: 8px;
-
-    color: #ffffff;
-
-    font-size: 14px;
-    line-height: 1.5;
-
+    color: #fff;
     text-decoration: none;
-    overflow-wrap: anywhere;
 
-    transition:
-        border-color 0.25s ease,
-        background-color 0.25s ease,
-        transform 0.25s ease;
+    background: #111;
+
+    border: 1px solid #333;
+    border-radius: 10px;
+
+    transition: 0.3s;
 }
 
-.maintenance-contact-info .contact-item strong {
-    color: #c7a86d;
-
-    font-size: 15px;
-    font-weight: 700;
-}
-
-.maintenance-contact-info .contact-item span {
-    color: #ffffff;
-}
-
-.maintenance-contact-info .contact-item:hover {
-    background: #191919;
+.maintenance-contact-info a:hover {
     border-color: #c7a86d;
 
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+}
+
+.maintenance-contact-info strong {
+    color: #c7a86d;
+
+    margin-bottom: 5px;
 }
 
 
-/* ========================================
-   12. GOUDEN SCHEIDINGSLIJN
-======================================== */
+/* ============================= */
+/* DIVIDER & FOOTER TEXT         */
+/* ============================= */
 
 .maintenance-line {
-    width: 150px;
+    width: 80px;
     height: 2px;
 
-    margin: 25px auto;
+    background: #c7a86d;
 
-    background: #b9964e;
-
-    border: none;
-    border-radius: 0;
+    margin: 35px auto;
 }
-
-
-/* ========================================
-   13. FOOTER
-======================================== */
 
 .maintenance-footer {
     color: #c7a86d;
 
-    font-size: 12px;
-    font-weight: 400;
+    font-size: 0.9rem;
 
-    line-height: 1.7;
-    letter-spacing: 0.6px;
-}
-
-.maintenance-footer p + p {
-    margin-top: 3px;
+    letter-spacing: 1px;
 }
 
 
-/* ========================================
-   14. TABLETS
-======================================== */
+/* ============================= */
+/* MOBILE                        */
+/* ============================= */
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
-    .maintenance-page {
-        padding: 28px 22px;
+    .maintenance-container h1 {
+        font-size: 2.5rem;
     }
 
-    .maintenance-container {
-        max-width: 600px;
+    .maintenance-text {
+        font-size: 1.1rem;
+    }
+
+    .maintenance-subtext {
+        font-size: 0.95rem;
     }
 
     .maintenance-logo {
         width: 90px;
         height: 90px;
-
-        margin-bottom: 22px;
-    }
-
-    .maintenance-eyebrow {
-        font-size: 13px;
-        letter-spacing: 3.5px;
-    }
-
-    .maintenance-container h1 {
-        font-size: clamp(36px, 7vw, 48px);
-    }
-
-    .maintenance-text {
-        font-size: 17px;
-    }
-
-    .maintenance-subtext {
-        font-size: 14px;
-    }
-
-    .maintenance-stud h2 {
-        font-size: 26px;
-    }
-
-    .maintenance-stud h3 {
-        font-size: 14px;
     }
 
     .maintenance-contact {
-        padding: 22px 18px;
-    }
-
-}
-
-
-/* ========================================
-   15. MOBIELE TELEFOONS
-======================================== */
-
-@media (max-width: 480px) {
-
-    .maintenance-page {
-        align-items: flex-start;
-
-        padding: 24px 16px;
-    }
-
-    .maintenance-container {
-        max-width: 100%;
-    }
-
-    .maintenance-logo {
-        width: 78px;
-        height: 78px;
-
-        margin-bottom: 20px;
-    }
-
-    .maintenance-eyebrow {
-        margin-bottom: 16px;
-
-        font-size: 12px;
-        letter-spacing: 3px;
-    }
-
-    .maintenance-container h1 {
-        margin-bottom: 18px;
-
-        font-size: clamp(33px, 9vw, 42px);
-        line-height: 1.1;
-    }
-
-    .maintenance-text {
-        margin-bottom: 10px;
-
-        font-size: 16px;
-    }
-
-    .maintenance-subtext {
-        margin-bottom: 19px;
-
-        font-size: 13px;
-        line-height: 1.6;
-    }
-
-    .maintenance-stud {
-        padding: 0;
-    }
-
-    .maintenance-stud h2 {
-        font-size: 24px;
-    }
-
-    .maintenance-stud h3 {
-        font-size: 13px;
-    }
-
-    .maintenance-stud p {
-        font-size: 14px;
-    }
-
-    .maintenance-contact {
-        margin-top: 21px;
-        padding: 20px 14px;
-    }
-
-    .maintenance-contact h2 {
-        font-size: 21px;
-    }
-
-    .maintenance-contact > p {
-        margin-bottom: 16px;
-
-        font-size: 13px;
+        padding: 25px 20px;
     }
 
     .maintenance-contact-info {
         flex-direction: column;
-        gap: 9px;
+        gap: 10px;
     }
 
-    .maintenance-contact-info .contact-item {
-        padding: 12px 10px;
-
-        font-size: 13px;
-    }
-
-    .maintenance-line {
-        margin: 21px auto;
-    }
-
-    .maintenance-footer {
-        font-size: 11px;
+    .maintenance-contact-info a {
+        min-width: unset;
     }
 
 }
 
-
 /* ========================================
-   16. EXTRA KLEINE SCHERMEN
+   LANGUAGE SELECTOR - SELECT VERSION
 ======================================== */
 
-@media (max-width: 350px) {
+.language-selector select {
+    appearance: none;
+    -webkit-appearance: none;
+    min-width: 145px;
+    padding: 11px 38px 11px 15px;
+    border: 1px solid rgba(199,168,109,.75);
+    border-radius: 9px;
+    background-color: #1b1b1b;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23c7a86d' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 13px center;
+    color: #fff;
+    font: inherit;
+    font-size: .95rem;
+    cursor: pointer;
+    transition: border-color .25s, background-color .25s, box-shadow .25s;
+}
 
-    .maintenance-page {
-        padding: 20px 12px;
-    }
+.language-selector select:hover,
+.language-selector select:focus {
+    border-color: #c7a86d;
+    background-color: #252525;
+    box-shadow: 0 0 0 3px rgba(199,168,109,.15);
+    outline: none;
+}
 
-    .maintenance-container h1 {
-        font-size: 32px;
-    }
-
-    .maintenance-eyebrow {
-        font-size: 11px;
-        letter-spacing: 2px;
-    }
-
-    .maintenance-stud h2 {
-        font-size: 22px;
-    }
-
-    .maintenance-stud h3 {
-        font-size: 12px;
-    }
-
-    .maintenance-contact {
-        padding: 18px 10px;
-    }
-
+.language-selector select option {
+    background: #111;
+    color: #fff;
 }
 
 
 /* ========================================
-   17. TOEGANKELIJKHEID
+   CONTACT FORM - LAYOUT
 ======================================== */
 
-@media (prefers-reduced-motion: reduce) {
+/* Zet contactgegevens en formulier naast elkaar */
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: 30px;
+}
 
-    *,
-    *::before,
-    *::after {
-        scroll-behavior: auto !important;
-        transition: none !important;
-        animation: none !important;
+.contact-card {
+    min-width: 0;
+    height: 100%;
+    margin-bottom: 0;
+}
+
+.contact-form-card {
+    border-top: 4px solid #c7a86d;
+}
+
+.contact-form-card .contact-intro {
+    margin-bottom: 28px;
+}
+
+
+/* ========================================
+   CONTACT FORM - INPUTS
+======================================== */
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#contactForm .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#contactForm label {
+    color: #222;
+    font-weight: 650;
+    font-size: .95rem;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #d8d8d8;
+    border-radius: 9px;
+    background: #fafafa;
+    color: #1a1a1a;
+    font: inherit;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: border-color .25s, box-shadow .25s, background-color .25s;
+}
+
+#contactForm textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+#contactForm input::placeholder,
+#contactForm textarea::placeholder {
+    color: #999;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+    outline: none;
+    border-color: #c7a86d;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(199,168,109,.18);
+}
+
+
+/* ========================================
+   CONTACT FORM - BUTTON & STATUS
+======================================== */
+
+#contactForm button.preview-btn {
+    align-self: flex-start;
+    border: 1px solid #111;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 650;
+    font-size: 1rem;
+    margin-top: 3px;
+}
+
+#contactForm button.preview-btn:hover {
+    border-color: #c7a86d;
+}
+
+#formStatus {
+    padding: 14px 16px;
+    border-left: 4px solid #c7a86d;
+    border-radius: 7px;
+    background: #f7f2e9;
+    color: #4b402e;
+    font-size: .95rem;
+    line-height: 1.6;
+}
+
+#formStatus[hidden] {
+    display: none;
+}
+
+
+/* ========================================
+   CONTACT FORM - RESPONSIVE
+======================================== */
+
+@media (max-width: 900px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
     }
 
+    .contact-card {
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .language-selector {
+        top: 22px;
+        right: 20px;
+    }
+
+    .language-selector select {
+        min-width: 125px;
+        padding: 9px 32px 9px 11px;
+        font-size: .85rem;
+    }
+
+    #contactForm {
+        gap: 17px;
+    }
+
+    #contactForm button.preview-btn {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 @media (max-width: 480px) {
-
-    .maintenance-stud {
-        padding: 0 4px;
+    .language-selector {
+        top: 18px;
+        right: 15px;
     }
 
-    .maintenance-stud h2 {
-        font-size: clamp(30px, 8vw, 38px);
-        line-height: 1.12;
-        margin-bottom: 4px;
-    }
-
-    .maintenance-stud h3 {
-        font-size: clamp(12px, 3.5vw, 16px);
-        line-height: 1.3;
-        margin-bottom: 10px;
-    }
-
-    .maintenance-stud p {
-        font-size: 15px;
-        line-height: 1.5;
-    }
-
-    .maintenance-line {
-        width: 110px;
-        height: 2px;
-        margin: 22px auto;
+    .language-selector select {
+        min-width: 112px;
+        max-width: 125px;
+        font-size: .8rem;
     }
 }
 
-@media (max-width: 350px) {
 
-    .maintenance-stud h2 {
-        font-size: 28px;
+
+/* =========================
+   NEWS NAVIGATION
+   ========================= */
+
+#sidebar > a.news-nav-link {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    text-align: left !important;
+    position: relative;
+    overflow: hidden;
+}
+
+/* NEWS ALWAYS LEFT */
+
+#sidebar > a.news-nav-link .news-label {
+    order: 1 !important;
+    margin-right: auto;
+    position: relative;
+    z-index: 2;
+}
+
+/* NEW ALWAYS RIGHT */
+
+#sidebar > a.news-nav-link .news-badge {
+    order: 2 !important;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+
+    display: none;
+    flex-shrink: 0;
+
+    padding: 5px 12px;
+    background: #E5B51B;
+    color: #111;
+
+    border: 2px solid #111;
+    border-radius: 5px;
+
+    font-size: 12px;
+    font-weight: 1000;
+    font-style: italic;
+    letter-spacing: 1px;
+
+    position: relative;
+    z-index: 2;
+
+    animation: comicPop 2.8s ease-in-out infinite;
+}
+
+#sidebar > a.news-nav-link.show-news-badge .news-badge {
+    display: inline-flex;
+}
+
+@keyframes comicPop {
+    0%, 75%, 100% {
+        transform: scale(1) rotate(0deg);
     }
-
-    .maintenance-stud h3 {
-        font-size: 11px;
+    80% {
+        transform: scale(1.18) rotate(-5deg);
     }
-
-    .maintenance-stud p {
-        font-size: 14px;
+    85% {
+        transform: scale(1.08) rotate(4deg);
+    }
+    90% {
+        transform: scale(1.13) rotate(-2deg);
     }
 }
 
+#sidebar > a.news-nav-link::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(
+        110deg,
+        transparent,
+        rgba(255, 235, 160, .35),
+        transparent
+    );
+    pointer-events: none;
+    animation: newsShine 3.5s ease-in-out infinite;
+}
+
+@keyframes newsShine {
+    0% { left: -100%; }
+    45%, 100% { left: 150%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #sidebar > a.news-nav-link::after,
+    #sidebar > a.news-nav-link .news-badge {
+        animation: none;
+    }
+}
+
+/* FIX HOMEPAGE DOG CARDS */
+
+.dogs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+}
+
+.dog-card {
+    height: 100%;
+    transform: none;
+}
+
+.dog-card:hover {
+    transform: none !important;
+}
+
+.dog-card img {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 768px) {
+    .dogs {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ================================
+   WITO PROFILE
+================================ */
+
+.wito-section {
+    padding: 22px 0;
+    border-bottom: 1px solid #e8e1d5;
+}
+
+.wito-section:last-child {
+    border-bottom: none;
+}
+
+.wito-eyebrow {
+    display: block;
+    color: #b18c4f;
+    font-size: .72rem;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    margin-bottom: 8px;
+}
+
+.wito-section h3 {
+    color: #111;
+    font-size: 1.35rem;
+    margin: 0 0 14px;
+}
+
+.wito-section p {
+    color: #666;
+    line-height: 1.85;
+    margin-bottom: 13px;
+}
+
+.wito-section p:last-child {
+    margin-bottom: 0;
+}
+
+.wito-highlight {
+    color: #a17a37;
+    font-weight: 700;
+}
+
+.wito-section strong {
+    color: #292929;
+}
+
+.wito-stud {
+    background: #f8f5ef;
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 15px;
+}
+
+.wito-contact-btn {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 12px 20px;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.wito-contact-btn:hover {
+    background: #c7a86d;
+    color: #111;
+}
+
+
+/* ================================
+   ABOUT US PROFILE
+================================ */
+
+.about-profile {
+    padding: 50px;
+}
+
+.about-section {
+    padding: 28px 0;
+    border-bottom: 1px solid #e8e1d5;
+}
+
+.about-section:first-child {
+    padding-top: 0;
+}
+
+.about-section:last-of-type {
+    border-bottom: none;
+}
+
+.about-eyebrow {
+    display: block;
+    color: #b18c4f;
+    font-size: .75rem;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    margin-bottom: 10px;
+}
+
+.about-section h2 {
+    color: #111;
+    font-size: 1.65rem;
+    margin-bottom: 18px;
+}
+
+.about-section p {
+    color: #666;
+    font-size: 1.02rem;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+.about-section p:last-child {
+    margin-bottom: 0;
+}
+
+.about-section strong {
+    color: #a17a37;
+    font-weight: 700;
+}
+
+/* SIGNATURE */
+
+.about-signature {
+    margin-top: 25px;
+    padding: 30px;
+    background: #f8f5ef;
+    border-left: 4px solid #c7a86d;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.about-signature p {
+    color: #a17a37;
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.about-signature span {
+    color: #444;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .about-profile {
+        padding: 30px 25px;
+    }
+
+    .about-section h2 {
+        font-size: 1.4rem;
+    }
+
+    .about-signature {
+        padding: 25px 15px;
+    }
+
+    .about-signature p {
+        font-size: 1rem;
+    }
+}
+/* ================================
+   PEDIGREE DOWNLOAD BUTTON
+================================ */
+
+.pedigree-download {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 12px 22px;
+    background: #c7a86d;
+    color: #111;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.pedigree-download:hover {
+    background: #ad8d54;
+    transform: translateY(-2px);
+}
