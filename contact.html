@@ -1,0 +1,450 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Haus Esposito - Contact</title>
+
+    <link rel="icon" type="image/png" href="images/site_logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="overlay"></div>
+
+    <!-- SIDEBAR -->
+
+    <nav id="sidebar">
+
+        <h2>Haus Esposito</h2>
+
+        <a href="index.html" data-translate="home">Home</a>
+
+        <div class="submenu">
+            <span data-translate="dogs">Our Dogs</span>
+
+            <a href="reuen.html" data-translate="males">Males</a>
+            <a href="teven.html" data-translate="females">Females</a>
+            <a href="puppys.html" data-translate="puppies">Our Puppies</a>
+        </div>
+
+        <a href="foto-galerij.html" data-translate="gallery">Photo Gallery</a>
+        <a href="over-ons.html" data-translate="about">About Us</a>
+
+        <a href="news.html" class="news-nav-link">
+            <span class="news-label" data-translate="news">News</span>
+            <span class="news-badge">NEW!</span>
+        </a>
+
+        <a href="contact.html" class="active" data-translate="contact">Contact</a>
+
+    </nav>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo-container">
+
+            <img src="images/logo.jpg" alt="Haus Esposito Logo">
+
+            <div>
+                <h1>Haus Esposito</h1>
+                <p data-translate="breed">German Shepherds</p>
+            </div>
+
+        </div>
+
+        <div class="language-selector">
+            <select id="languageSelect" onchange="setLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="nl">Nederlands</option>
+                <option value="de">Deutsch</option>
+                <option value="it">Italiano</option>
+            </select>
+        </div>
+
+    </header>
+
+
+    <!-- MENU BUTTON -->
+
+    <div class="menu-bar">
+        <button id="menuBtn">☰</button>
+    </div>
+
+
+    <!-- PAGE HERO -->
+
+    <section class="page-hero">
+
+        <div class="page-hero-content">
+
+            <p class="eyebrow">HAUS ESPOSITO</p>
+
+            <h1 data-translate="contact">Contact</h1>
+
+            <p data-translate="contactHeroText">
+                Feel free to get in touch with us.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT CONTENT -->
+
+    <main class="contact-page">
+
+        <div class="contact-container">
+
+            <!-- CONTACT INFORMATION -->
+
+            <div class="contact-card">
+
+                <span class="eyebrow" data-translate="contactDetails">
+                    CONTACT INFORMATION
+                </span>
+
+                <h2 data-translate="contactTitle">
+                    Get in touch with us
+                </h2>
+
+                <p class="contact-intro" data-translate="contactIntro">
+                    Do you have questions about our German Shepherds, our dogs or future litters? We will be happy to help you.
+                </p>
+
+
+                <div class="contact-details">
+
+                    <!-- EMAIL -->
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">✉</div>
+
+                        <div>
+                            <h3 data-translate="email">Email</h3>
+
+                            <p>
+                                <a href="mailto:info@hausesposito.com">
+                                    info@hausesposito.com
+                                </a>
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- PHONE -->
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">☎</div>
+
+                        <div>
+                            <h3 data-translate="phone">Phone</h3>
+
+                            <p>
+                                <a href="tel:+39 379 144 9435">
+                                    +39 379 144 9435
+                                </a>
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- LOCATION -->
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">📍</div>
+
+                        <div>
+                            <h3 data-translate="location">Location</h3>
+
+                            <p data-translate="locationValue">
+                                Schilde, Belgium
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTACT FORM -->
+
+            <div class="contact-card contact-form-card">
+
+                <span class="eyebrow" data-translate="formEyebrow">
+                    SEND US A MESSAGE
+                </span>
+
+                <h2 data-translate="formTitle">
+                    Contact form
+                </h2>
+
+                <p class="contact-intro" data-translate="formIntro">
+                    Fill in the form below and let us know how we can help you.
+                </p>
+
+
+                <form
+                    id="contactForm"
+                    action="https://api.web3forms.com/submit"
+                    method="POST"
+                >
+
+                <input
+                    type="hidden"
+                    name="access_key"
+                    value="2a1e0114-d9b5-4f14-b471-3b228fc2c122"
+                >
+
+                    <input
+                        type="hidden"
+                        name="from_name"
+                        value="Haus Esposito Contact Form"
+                    >
+
+
+                    <div class="form-group">
+
+                        <label for="contactName" data-translate="formName">
+                            Your name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="contactName"
+                            name="name"
+                            placeholder="Enter your name"
+                            data-translate-placeholder="formNamePlaceholder"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="contactEmail" data-translate="formEmail">
+                            Your email address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="contactEmail"
+                            name="email"
+                            placeholder="Enter your email address"
+                            data-translate-placeholder="formEmailPlaceholder"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="contactSubject" data-translate="formSubject">
+                            Subject
+                        </label>
+
+                        <input
+                            type="text"
+                            id="contactSubject"
+                            name="subject"
+                            placeholder="Enter the subject"
+                            data-translate-placeholder="formSubjectPlaceholder"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="contactMessage" data-translate="formMessage">
+                            Your message
+                        </label>
+
+                        <textarea
+                            id="contactMessage"
+                            name="message"
+                            rows="6"
+                            placeholder="Write your message here..."
+                            data-translate-placeholder="formMessagePlaceholder"
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button type="submit" class="preview-btn" id="submitButton" data-translate="formSend">
+                        Send message
+                    </button>
+
+
+                    <p
+                        id="formStatus"
+                        class="form-status"
+                        role="status"
+                        aria-live="polite"
+                        hidden
+                    ></p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <img
+                    src="images/logo.jpg"
+                    class="footer-logo"
+                    alt="Haus Esposito"
+                >
+            </div>
+
+            <div>
+
+                <h3 data-translate="contact">Contact</h3>
+
+                <p>info@hausesposito.com</p>
+
+                <p>+39 379 144 9435</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright" data-translate="footerRights">
+            All rights reserved.
+        </div>
+
+    </footer>
+
+
+    <!-- SCRIPTS -->
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const contactForm = document.getElementById("contactForm");
+            const formStatus = document.getElementById("formStatus");
+            const submitButton = document.getElementById("submitButton");
+            const languageSelect = document.getElementById("languageSelect");
+
+            const messages = {
+                en: {
+                    sending: "Sending your message...",
+                    success: "Your message has been sent successfully! We will get back to you as soon as possible.",
+                    error: "Something went wrong. Please try again or contact us directly by email.",
+                    button: "Send message"
+                },
+                nl: {
+                    sending: "Je bericht wordt verzonden...",
+                    success: "Je bericht is succesvol verzonden! We nemen zo snel mogelijk contact met je op.",
+                    error: "Er is iets misgegaan. Probeer het opnieuw of neem rechtstreeks contact met ons op via e-mail.",
+                    button: "Bericht verzenden"
+                },
+                de: {
+                    sending: "Deine Nachricht wird gesendet...",
+                    success: "Deine Nachricht wurde erfolgreich gesendet! Wir werden uns so schnell wie möglich bei dir melden.",
+                    error: "Etwas ist schiefgelaufen. Bitte versuche es erneut oder kontaktiere uns direkt per E-Mail.",
+                    button: "Nachricht senden"
+                },
+                it: {
+                    sending: "Il tuo messaggio è in fase di invio...",
+                    success: "Il tuo messaggio è stato inviato correttamente! Ti risponderemo il prima possibile.",
+                    error: "Qualcosa è andato storto. Riprova oppure contattaci direttamente via e-mail.",
+                    button: "Invia messaggio"
+                }
+            };
+
+            function getCurrentLanguage() {
+                const selectedLanguage = languageSelect ? languageSelect.value : "en";
+                return messages[selectedLanguage] ? selectedLanguage : "en";
+            }
+
+            contactForm.addEventListener("submit", async function (event) {
+
+                event.preventDefault();
+
+                if (!contactForm.reportValidity()) {
+                    return;
+                }
+
+                const language = getCurrentLanguage();
+                const currentMessages = messages[language];
+
+                submitButton.disabled = true;
+                submitButton.textContent = currentMessages.sending;
+
+                formStatus.hidden = false;
+                formStatus.textContent = currentMessages.sending;
+
+                try {
+
+                    const formData = new FormData(contactForm);
+
+                    const response = await fetch(contactForm.action, {
+                        method: "POST",
+                        body: formData
+                    });
+
+                    const result = await response.json();
+
+                    if (response.ok && result.success) {
+
+                        formStatus.textContent = currentMessages.success;
+                        contactForm.reset();
+
+                    } else {
+
+                        formStatus.textContent = currentMessages.error;
+
+                    }
+
+                } catch (error) {
+
+                    formStatus.textContent = currentMessages.error;
+
+                } finally {
+
+                    submitButton.disabled = false;
+                    submitButton.textContent = messages[getCurrentLanguage()].button;
+
+                }
+
+            });
+
+        });
+    </script>
+
+</body>
+</html>
