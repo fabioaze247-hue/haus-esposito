@@ -2307,3 +2307,22 @@ footer {
         text-align: center;
     }
 }
+
+
+
+.contact-preview {
+    background: #d7d0d0;
+}
+
+.contact-preview .preview-container {
+    background: #e5e5e5;
+    border: 1px solid rgba(199, 168, 109, .3);
+}
+
+.contact-preview .preview-container h2 {
+    color: #111;
+}
+
+.contact-preview .preview-container p {
+    color: #666;
+}
