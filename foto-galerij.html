@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
 
     <title>Haus Esposito - Photo Gallery</title>
 
@@ -15,12 +16,9 @@
 <body>
 
     <!-- OVERLAY -->
-
     <div id="overlay"></div>
 
-
     <!-- SIDEBAR -->
-
     <nav id="sidebar">
 
         <h2>Haus Esposito</h2>
@@ -28,12 +26,9 @@
         <a href="index.html" data-translate="home">Home</a>
 
         <div class="submenu">
-
             <span data-translate="dogs">Our Dogs</span>
-
             <a href="reuen.html" data-translate="males">Males</a>
             <a href="teven.html" data-translate="females">Females</a>
-
         </div>
 
         <a href="puppys.html" data-translate="puppies">Our Puppies</a>
@@ -53,51 +48,38 @@
 
     </nav>
 
-
     <!-- HEADER -->
-
     <header>
 
         <div class="logo-container">
-
             <img src="images/logo.jpg" alt="Haus Esposito Logo">
 
             <div>
                 <h1>Haus Esposito</h1>
                 <p data-translate="breed">German Shepherds</p>
             </div>
-
         </div>
 
         <div class="language-selector">
-
             <select id="languageSelect" onchange="setLanguage(this.value)">
                 <option value="en">English</option>
                 <option value="nl">Nederlands</option>
                 <option value="de">Deutsch</option>
                 <option value="it">Italiano</option>
             </select>
-
         </div>
 
     </header>
 
-
     <!-- MENU BUTTON -->
-
     <div class="menu-bar">
-
         <button id="menuBtn">☰</button>
-
     </div>
 
-
     <!-- PAGE HERO -->
-
     <section class="page-hero">
 
         <div class="page-hero-content">
-
             <p class="eyebrow">HAUS ESPOSITO</p>
 
             <h1 data-translate="gallery">Photo Gallery</h1>
@@ -105,34 +87,26 @@
             <p data-translate="galleryText">
                 A collection of photos and videos of our German Shepherds.
             </p>
-
         </div>
 
     </section>
 
-
     <!-- PHOTO GALLERY -->
-
     <main class="gallery-page">
 
         <section class="gallery-section">
 
             <div class="gallery-title">
-
                 <p class="eyebrow" data-translate="photosLabel">PHOTOS</p>
 
                 <h2 data-translate="galleryDogsTitle">
                     Our dogs in pictures
                 </h2>
-
             </div>
-
 
             <div class="photo-grid">
 
-
                 <!-- PHOTO 1 -->
-
                 <figure class="photo-card">
 
                     <img
@@ -141,25 +115,15 @@
                     >
 
                     <figcaption>
-
                         <div class="media-info">
-
-                            <span class="media-dog">
-                                Dog: Queen
-                            </span>
-
-                            <span class="media-date">
-                                Date: September 2026
-                            </span>
-
+                            <span class="media-dog">Dog: Queen</span>
+                            <span class="media-date">Date: September 2026</span>
                         </div>
                     </figcaption>
 
                 </figure>
 
-
                 <!-- PHOTO 2 -->
-
                 <figure class="photo-card">
 
                     <img
@@ -168,30 +132,19 @@
                     >
 
                     <figcaption>
-
                         <div class="media-info">
-
-                            <span class="media-dog">
-                                Dog: Wito
-                            </span>
-
-                            <span class="media-date">
-                                Date: July 2026
-                            </span>
-
+                            <span class="media-dog">Dog: Wito</span>
+                            <span class="media-date">Date: July 2026</span>
                         </div>
                     </figcaption>
 
                 </figure>
 
-                
             </div>
 
         </section>
 
-
         <!-- VIDEOS -->
-
         <section class="video-section">
 
             <div class="gallery-title">
@@ -208,270 +161,179 @@
 
             </div>
 
-
             <div class="video-grid">
 
-
-                <!-- VIDEO 1 -->
-
+                <!-- QUEEN VIDEO 1 -->
                 <figure class="video-card">
 
-                    <video controls>
-
-                        <source
-                            src="videos/queen_vid1.mp4"
-                            type="video/mp4"
-                        >
-
-                        Your browser does not support this video.
-
-                    </video>
+                    <div class="video-frame">
+                        <iframe
+                            src="https://www.youtube.com/embed/5t1M-fY8Ifk"
+                            title="Queen Dei Realnardi - Video 1"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
 
                     <figcaption>
-
                         <div class="media-info">
-
-                            <span class="media-dog">
-                                Dog: Queen
-                            </span> 
-
-                            <span class="media-date">
-                                Date: August 2026
-                            </span>
+                            <span class="media-dog">Dog: Queen</span>
+                            <span class="media-date">Date: August 2026</span>
                         </div>
 
                         <h3>Queen in action</h3>
-                        <p>
-                            First Protection Work Session in Italy. Working with Centro Cinofilo delle Rose
-                        </p>
-
+                        <p>First Protection Work Session in Italy. Working with Centro Cinofilo delle Rose.</p>
                     </figcaption>
 
                 </figure>
 
-
-                <!-- VIDEO 2 -->
-
+                <!-- QUEEN VIDEO 2 -->
                 <figure class="video-card">
 
-                    <video controls>
-
-                        <source
-                            src="videos/queen_vid2.mp4"
-                            type="video/mp4"
-                        >
-
-                        Your browser does not support this video.
-
-                    </video>
+                    <div class="video-frame">
+                        <iframe
+                            src="https://www.youtube.com/embed/uaFcm5fWlsw"
+                            title="Queen Dei Realnardi - Video 2"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
 
                     <figcaption>
-
                         <div class="media-info">
-
-                            <span class="media-dog">
-                                Dog: Queen
-                            </span>
-                            <span class="media-date">
-                                Date: August 2026
-                            </span>
+                            <span class="media-dog">Dog: Queen</span>
+                            <span class="media-date">Date: August 2026</span>
                         </div>
 
                         <h3>Queen in action</h3>
-
-                        <p>
-                            First Protection Work Session in Italy. Working with Centro Cinofilo delle Rose
-                        </p>
-
+                        <p>Moments from Queen's development and activities.</p>
                     </figcaption>
 
                 </figure>
 
-
-                <!-- VIDEO 3 -->
-
+                <!-- QUEEN VIDEO 3 -->
                 <figure class="video-card">
 
-                    <video controls>
-
-                        <source
-                            src="videos/queen_vid3.mp4"
-                            type="video/mp4"
-                        >
-
-                        Your browser does not support this video.
-
-                    </video>
-
-                    <figcaption>
-
-                        <div class="media-info">
-
-                            <span class="media-dog">
-                                Dog: Queen
-                            </span>
-                            <span class="media-date">
-                                Date: August 2026
-                            </span>
-
-                        </div>
-                        <h3>Queen in action</h3>
-                        <p>
-                            First Protection Work Session in Italy. Working with Centro Cinofilo delle Rose
-                        </p>
-
-                    </figcaption>
-
-                </figure>
-
-
-                <!-- VIDEO 4 -->
-
-                <figure class="video-card">
-
-                    <video controls>
-
-                        <source
-                            src="videos/queen_vid4.mp4"
-                            type="video/mp4"
-                        >
-
-                        Your browser does not support this video.
-
-                    </video>
+                    <div class="video-frame">
+                        <iframe
+                            src="https://www.youtube.com/embed/FNv_ocXMCP4"
+                            title="Queen Dei Realnardi - Video 3"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
 
                     <figcaption>
-
                         <div class="media-info">
-
-                            <span class="media-dog">
-                                Dog: Queen
-                            </span>
-
-                            <span class="media-date">
-                                Date: August 2026
-                            </span>
-
+                            <span class="media-dog">Dog: Queen</span>
+                            <span class="media-date">Date: August 2026</span>
                         </div>
 
                         <h3>Queen in action</h3>
-
-                        <p>
-                            First Protection Work Session in Italy. Working with Centro Cinofilo delle Rose
-                        </p>
-
+                        <p>Moments from Queen's development and activities.</p>
                     </figcaption>
 
                 </figure>
-                
+
+                <!-- QUEEN VIDEO 4 -->
                 <figure class="video-card">
 
-                    <video controls>
-
-                        <source
-                            src="videos/queen_vid5.mp4"
-                            type="video/mp4"
-                        >
-
-                        Your browser does not support this video.
-
-                    </video>
+                    <div class="video-frame">
+                        <iframe
+                            src="https://www.youtube.com/embed/FsrVWOjrmNk"
+                            title="Queen Dei Realnardi - Video 4"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
 
                     <figcaption>
-
                         <div class="media-info">
-
-                            <span class="media-dog">
-                                Dog: Queen
-                            </span>
-
-                            <span class="media-date">
-                                Date: August 2026
-                            </span>
-
+                            <span class="media-dog">Dog: Queen</span>
+                            <span class="media-date">Date: August 2026</span>
                         </div>
 
                         <h3>Queen in action</h3>
-
-                        <p>
-                            First Protection Work Session in Italy. Working with Centro Cinofilo delle Rose
-                        </p>
-
+                        <p>Moments from Queen's development and activities.</p>
                     </figcaption>
 
                 </figure>
 
+                <!-- QUEEN VIDEO 5 -->
                 <figure class="video-card">
 
-                    <video controls>
-
-                        <source
-                            src="videos/wito_vid1.mp4"
-                            type="video/mp4"
-                        >
-
-                        Your browser does not support this video.
-
-                    </video>
+                    <div class="video-frame">
+                        <iframe
+                            src="https://www.youtube.com/embed/P0plD-T7y1s"
+                            title="Queen Dei Realnardi - Video 5"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
 
                     <figcaption>
-
                         <div class="media-info">
-
-                            <span class="media-dog">
-                                Dog: Wito
-                            </span>
-
-                            <span class="media-date">
-                                Date: July 2026
-                            </span>
-
+                            <span class="media-dog">Dog: Queen</span>
+                            <span class="media-date">Date: August 2026</span>
                         </div>
 
-                        <h3>Wito's SV evaluation</h3>
-
-                        <p>
-                            Wito takes part in the SV evaluation and demonstrates his abilities.
-                            He received an "Excellent" rating and a positive assessment from the judge.
-                        </p>
-
+                        <h3>Queen in action</h3>
+                        <p>Moments from Queen's development and activities.</p>
                     </figcaption>
 
                 </figure>
 
+                <!-- WITO VIDEO 1 -->
                 <figure class="video-card">
 
-                    <video controls>
-
-                        <source
-                            src="videos/wito_vid2.mp4"
-                            type="video/mp4"
-                        >
-
-                        Your browser does not support this video.
-
-                    </video>
+                    <div class="video-frame">
+                        <iframe
+                            src="https://www.youtube.com/embed/djCCVRRo2zU"
+                            title="Wito Cevaro - SV Evaluation"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
 
                     <figcaption>
-
                         <div class="media-info">
-
-                            <span class="media-dog">
-                                Dog: Wito
-                            </span>
-
-                            <span class="media-date">
-                                Date: Ocotber 2026
-                            </span>
-
+                            <span class="media-dog">Dog: Wito</span>
+                            <span class="media-date">Date: July 2026</span>
                         </div>
 
-                        <h3>Wito's KORUNG evaluation</h3>
+                        <h3>Wito's SV Evaluation</h3>
+                        <p>Wito takes part in the SV evaluation and demonstrates his abilities. He received an "Excellent" rating and a positive assessment from the judge.</p>
+                    </figcaption>
 
-                        <p>
-                            KORUNG in Traunstein, Bayern-Sud Germany. Judge: Christian Schalk
-                        </p>
+                </figure>
 
+                <!-- WITO VIDEO 2 -->
+                <figure class="video-card">
+
+                    <div class="video-frame">
+                        <iframe
+                            src="https://www.youtube.com/embed/BKEUjMGSBfk"
+                            title="Wito Cevaro - Körung Evaluation"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <figcaption>
+                        <div class="media-info">
+                            <span class="media-dog">Dog: Wito</span>
+                            <span class="media-date">Date: October 2026</span>
+                        </div>
+
+                        <h3>Wito's Körung Evaluation</h3>
+                        <p>Körung in Traunstein, Bavaria, Germany. Judge: Christian Schalk.</p>
                     </figcaption>
 
                 </figure>
@@ -482,42 +344,102 @@
 
     </main>
 
+<footer class="site-footer">
 
-    <!-- FOOTER -->
+    <div class="footer-main">
 
-    <footer>
+        <!-- BRANDING -->
+        <div class="footer-brand">
 
-        <div class="footer-content">
+            <img
+                src="images/logo.jpg"
+                alt="Haus Esposito Logo"
+                class="footer-logo"
+            >
 
-            <div>
-                <img
-                    src="images/logo.jpg"
-                    class="footer-logo"
-                    alt="Haus Esposito"
-                >
-            </div>
+            <h2>HAUS ESPOSITO</h2>
 
-            <div>
-
-                <h3 data-translate="contact">Contact</h3>
-
-                <p>info@hausesposito.com</p>
-
-                <p>+39 379 144 9435</p>
-
-            </div>
+            <p class="footer-tagline">
+                PASSION. INTEGRITY. RESPECT FOR THE BREED.
+            </p>
 
         </div>
 
-        <div class="copyright" data-translate="footerRights">
-            All rights reserved.
+
+        <!-- CONTACT -->
+        <div class="footer-column">
+
+            <h3 data-translate="contact">CONTACT</h3>
+
+            <a href="contact.html" data-translate="footerContactUs">
+                Contact Us
+            </a>
+
+            <a href="mailto:info@hausesposito.com">
+                info@hausesposito.com
+            </a>
+
+            <a href="tel:+393791449435">
+                +39 379 144 9435
+            </a>
+
         </div>
 
-    </footer>
+
+
+    <!-- SOCIAL MEDIA & PROFILES -->
+    <div class="footer-column">
+
+        <h3 data-translate="footerFollowUs">FOLLOW US</h3>
+
+        <a href="https://www.instagram.com/haus_esposito_kennel/"
+        target="_blank"
+        rel="noopener noreferrer">
+            Instagram
+        </a>
+
+        <a href="https://www.facebook.com/p/Haus-Esposito-Kennel-German-Shepperd-Working-Dog-61595395046702/"
+        target="_blank"
+        rel="noopener noreferrer">
+            Facebook
+        </a>
+
+        <a href="https://www.youtube.com/@HausEspositoKennel"
+        target="_blank"
+        rel="noopener noreferrer">
+            YouTube
+        </a>
+
+        <a href="https://www.working-dog.com/user/Gaetano-Esposito-581197"
+        target="_blank"
+        rel="noopener noreferrer">
+            Working-Dog
+        </a>
+
+    </div>
+
+
+    </div>
+
+
+    <!-- COPYRIGHT -->
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 HAUS ESPOSITO.
+            <span data-translate="footerRights">ALL RIGHTS RESERVED.</span>
+        </p>
+
+        <span data-translate="footerKennel">
+            GERMAN SHEPHERD KENNEL
+        </span>
+
+    </div>
+
+</footer>
 
 
     <!-- SCRIPTS -->
-
     <script src="translations.js"></script>
     <script src="script.js"></script>
 

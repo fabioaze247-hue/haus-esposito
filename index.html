@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,102 +6,309 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="theme-color" content="#101010">
-    <meta name="description" content="Haus Esposito German Shepherds - Website under maintenance. Wito is available for stud service.">
-
-    <title>Website Under Maintenance</title>
+    <title data-translate="homePageTitle">Haus Esposito</title>
 
     <link rel="icon" type="image/png" href="images/site_logo.png">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="maintenance-page">
+<body>
 
-    <main class="maintenance-container">
+    <div id="overlay"></div>
 
-        <!-- LOGO -->
-        <img
-            src="images/logo.jpg"
-            alt="Haus Esposito"
-            class="maintenance-logo"
-        >
+    <nav id="sidebar">
 
-        <!-- BRAND -->
-        <span class="maintenance-eyebrow">
-            HAUS ESPOSITO
-        </span>
+        <h2>Haus Esposito</h2>
 
-        <!-- MAIN TITLE -->
-        <h1>
-            Website Under Maintenance
-        </h1>
+        <a href="index.html" class="active" data-translate="home">Home</a>
 
-        <p class="maintenance-text">
-            Our website is currently undergoing maintenance.
-        </p>
+        <div class="submenu">
 
-        <p class="maintenance-subtext">
-            We are making some improvements and will be back online soon.
-            Thank you for your patience!
-        </p>
+            <span data-translate="dogs">Our Dogs</span>
 
-       
-        <!-- STUD DOG -->
-        <section class="maintenance-stud">
-        
-            <div class="maintenance-line"></div>
-        
-            <h2>WITO – STUD DOG</h2>
-        
-            <h3>OFFICIALLY AVAILABLE FOR STUD SERVICE</h3>
-        
-            <p>
-                For breeding inquiries and further information,<br>
-                please contact Haus Esposito Kennel.
-            </p>
-        
-            <div class="maintenance-line"></div>
-        
-        </section>
+            <a href="reuen.html" data-translate="males">Males</a>
+            <a href="teven.html" data-translate="females">Females</a>
+            <a href="puppys.html" data-translate="puppies">Our Puppies</a>
+
+        </div>
+
+        <a href="foto-galerij.html" data-translate="gallery">Photo Gallery</a>
+        <a href="over-ons.html" data-translate="about">About Us</a>
+<a href="news.html" class="news-nav-link">
+    <span class="news-label" data-translate="news">News</span>
+    <span class="news-badge">NEW!</span>
+</a>
+        <a href="contact.html" data-translate="contact">Contact</a>
+
+    </nav>
 
 
-        <!-- CONTACT -->
-        <section class="maintenance-contact">
+    <header>
 
-            <h2>Contact Us</h2>
+        <div class="logo-container">
 
-            <p>
-                Do you have a question or would you like to get in touch
-                with us? You can still reach us while our website is
-                under maintenance.
-            </p>
+            <img src="images/logo.jpg" alt="Haus Esposito Logo">
 
-            <div class="maintenance-contact-info">
+            <div>
+                <h1>Haus Esposito</h1>
+                <p data-translate="breed">German Shepherds</p>
+            </div>
 
-                <a href="mailto:info@hausesposito.com" class="contact-item">
-                    <strong>Email</strong>
-                    <span>info@hausesposito.com</span>
+        </div>
+
+        <div class="language-selector">
+            <select id="languageSelect" onchange="setLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="nl">Nederlands</option>
+                <option value="de">Deutsch</option>
+                <option value="it">Italiano</option>
+            </select>
+        </div>
+
+    </header>
+
+
+    <div class="menu-bar">
+
+        <button id="menuBtn">☰</button>
+
+    </div>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1 data-translate="homeHeroTitle">
+                Passion for German Shepherds
+            </h1>
+
+            <div class="hero-buttons">
+
+                <a href="reuen.html" data-translate="homeDogsButton">
+                    Our Dogs
                 </a>
 
-                <a href="tel:+39 379 144 9435" class="contact-item">
-                    <strong>Phone</strong>
-                    <span>+39 379 144 9435</span>
+                <a href="contact.html" data-translate="homeContactButton">
+                    Contact Us
                 </a>
 
             </div>
 
-        </section>
+        </div>
 
-        <!-- DIVIDER -->
-        <div class="maintenance-line"></div>
+    </section>
 
-        <!-- FOOTER -->
-        <footer class="maintenance-footer">
-            <p>German Shepherds - Working Line</p>
-            <p>Raised with passion and dedication.</p>
-        </footer>
 
-    </main>
+    <!-- DOGS -->
+
+    <section class="dogs">
+
+        <div class="dog-card">
+
+            <img
+                src="images/reu-home.jpg"
+                alt="Male German Shepherds"
+            >
+
+            <div class="card-content">
+
+                <h2 data-translate="males">Males</h2>
+
+                <p data-translate="homeMalesText">
+                    Discover our male German Shepherds.
+                </p>
+
+                <a href="reuen.html" data-translate="viewMore">
+                    View more
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="dog-card">
+
+            <img
+                src="images/teef-home.jpg"
+                alt="Female German Shepherds"
+            >
+
+            <div class="card-content">
+
+                <h2 data-translate="females">Females</h2>
+
+                <p data-translate="homeFemalesText">
+                    Discover our female German Shepherds.
+                </p>
+
+                <a href="teven.html" data-translate="viewMore">
+                    View more
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT US -->
+
+    <section class="about-preview">
+
+        <div class="preview-container">
+
+            <span class="eyebrow" data-translate="brandEyebrow">
+                HAUS ESPOSITO
+            </span>
+
+            <h2 data-translate="about">About Us</h2>
+
+            <p data-translate="homeAboutText">
+                Haus Esposito is a small-scale kennel dedicated to
+                German Shepherds. Our dogs are part of our family
+                and receive the daily attention, exercise and care
+                they deserve.
+            </p>
+
+            <a href="over-ons.html" class="preview-btn" data-translate="readMore">
+                Read more
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section class="contact-preview">
+
+        <div class="preview-container">
+
+            <span class="eyebrow" data-translate="contactEyebrow">
+                CONTACT
+            </span>
+
+            <h2 data-translate="homeContactTitle">
+                Get in touch with us
+            </h2>
+
+            <p data-translate="homeContactText">
+                Do you have questions about our dogs or future litters?
+                Feel free to contact us.
+            </p>
+
+            <a href="contact.html" class="preview-btn" data-translate="homeContactButton">
+                Contact Us
+            </a>
+
+        </div>
+
+    </section>
+
+<footer class="site-footer">
+
+    <div class="footer-main">
+
+        <!-- BRANDING -->
+        <div class="footer-brand">
+
+            <img
+                src="images/logo.jpg"
+                alt="Haus Esposito Logo"
+                class="footer-logo"
+            >
+
+            <h2>HAUS ESPOSITO</h2>
+
+            <p class="footer-tagline">
+                PASSION. INTEGRITY. RESPECT FOR THE BREED.
+            </p>
+
+        </div>
+
+
+        <!-- CONTACT -->
+        <div class="footer-column">
+
+            <h3 data-translate="contact">CONTACT</h3>
+
+            <a href="contact.html" data-translate="footerContactUs">
+                Contact Us
+            </a>
+
+            <a href="mailto:info@hausesposito.com">
+                info@hausesposito.com
+            </a>
+
+            <a href="tel:+393791449435">
+                +39 379 144 9435
+            </a>
+
+        </div>
+
+
+
+        <!-- SOCIAL MEDIA & PROFILES -->
+        <div class="footer-column">
+
+            <h3 data-translate="footerFollowUs">FOLLOW US</h3>
+
+            <a href="https://www.instagram.com/haus_esposito_kennel/"
+            target="_blank"
+            rel="noopener noreferrer">
+                Instagram
+            </a>
+
+            <a href="https://www.facebook.com/p/Haus-Esposito-Kennel-German-Shepperd-Working-Dog-61595395046702/"
+            target="_blank"
+            rel="noopener noreferrer">
+                Facebook
+            </a>
+
+            <a href="https://www.youtube.com/@HausEspositoKennel"
+            target="_blank"
+            rel="noopener noreferrer">
+                YouTube
+            </a>
+
+            <a href="https://www.working-dog.com/user/Gaetano-Esposito-581197"
+            target="_blank"
+            rel="noopener noreferrer">
+                Working-Dog
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- COPYRIGHT -->
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 HAUS ESPOSITO.
+            <span data-translate="footerRights">ALL RIGHTS RESERVED.</span>
+        </p>
+
+        <span data-translate="footerKennel">
+            GERMAN SHEPHERD KENNEL
+        </span>
+
+    </div>
+
+</footer>
+
+
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
