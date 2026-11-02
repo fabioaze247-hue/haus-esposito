@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>News - Haus Esposito</title>
+
+    <link rel="icon" type="image/png" href="images/site_logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="overlay"></div>
+
+    <!-- SIDEBAR -->
+
+    <nav id="sidebar">
+
+        <h2>Haus Esposito</h2>
+
+        <a href="index.html" data-translate="home">Home</a>
+
+        <div class="submenu">
+            <span data-translate="dogs">Our Dogs</span>
+            <a href="reuen.html" data-translate="males">Males</a>
+            <a href="teven.html" data-translate="females">Females</a>
+        </div>
+
+        <a href="puppys.html" data-translate="puppies">Our Puppies</a>
+        <a href="foto-galerij.html" data-translate="gallery">Photo Gallery</a>
+        <a href="over-ons.html" data-translate="about">About Us</a>
+
+        <a href="news.html" class="news-nav-link active">
+            <span class="news-label" data-translate="news">News</span>
+            <span class="news-badge">NEW!</span>
+        </a>
+
+        <a href="contact.html" data-translate="contact">Contact</a>
+
+    </nav>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo-container">
+
+            <img src="images/logo.jpg" alt="Haus Esposito Logo">
+
+            <div>
+                <h1>Haus Esposito</h1>
+                <p data-translate="breed">German Shepherds</p>
+            </div>
+
+        </div>
+
+        <div class="language-selector">
+
+            <select id="languageSelect" onchange="setLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="nl">Nederlands</option>
+                <option value="de">Deutsch</option>
+                <option value="it">Italiano</option>
+            </select>
+
+        </div>
+
+    </header>
+
+
+    <!-- MENU BUTTON -->
+
+    <div class="menu-bar">
+        <button id="menuBtn">☰</button>
+    </div>
+
+
+    <!-- PAGE HERO -->
+
+    <section class="page-hero">
+
+        <div class="page-hero-content">
+
+            <span class="eyebrow">HAUS ESPOSITO</span>
+
+            <h1 data-translate="newsPageTitle">News</h1>
+
+            <p data-translate="newsPageIntro">
+                Stay up to date with the latest news from Haus Esposito.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- NEWS -->
+
+    <main class="news-container">
+
+        <!-- NEWS 2: WITO AVAILABLE FOR STUD -->
+
+        <article class="news-card">
+
+            <details>
+
+                <summary>
+
+                    <div class="news-summary">
+
+                        <div>
+
+                            <span class="news-date">
+                                11 October 2026
+                            </span>
+
+                            <h2>
+                                Wito Cenaro Is Available for Stud
+                            </h2>
+
+                        </div>
+
+                        <span class="news-arrow">
+                            Read more...
+                        </span>
+
+                    </div>
+
+                </summary>
+
+                <div class="news-content">
+
+                    <p>
+                        We are happy to announce that Wito is now
+                        officially available for stud.
+                    </p>
+
+                    <p>
+                        For enquiries or further information about Wito,
+                        please feel free to contact us.
+                    </p>
+                    <p>
+                        <a href="contact.html" data-translate="contactUs">Contact us</a>
+                    </p>
+                    <p> <a href="reuen.html" data-translate="males">View Wito Cenaro</a> </p>
+                </div>
+
+            </details>
+
+        </article>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <img
+                    src="images/logo.jpg"
+                    class="footer-logo"
+                    alt="Haus Esposito"
+                >
+            </div>
+
+            <div>
+
+                <h3 data-translate="contact">Contact</h3>
+
+                <p>info@hausesposito.com</p>
+
+                <p>+39 379 144 9435</p>
+
+            </div>
+
+        </div>
+
+        <div class="copyright" data-translate="footerRights">
+            All rights reserved.
+        </div>
+
+    </footer>
+
+
+    <!-- SCRIPTS -->
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

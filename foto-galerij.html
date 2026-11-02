@@ -1,0 +1,525 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Haus Esposito - Photo Gallery</title>
+
+    <link rel="icon" type="image/png" href="images/site_logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- OVERLAY -->
+
+    <div id="overlay"></div>
+
+
+    <!-- SIDEBAR -->
+
+    <nav id="sidebar">
+
+        <h2>Haus Esposito</h2>
+
+        <a href="index.html" data-translate="home">Home</a>
+
+        <div class="submenu">
+
+            <span data-translate="dogs">Our Dogs</span>
+
+            <a href="reuen.html" data-translate="males">Males</a>
+            <a href="teven.html" data-translate="females">Females</a>
+
+        </div>
+
+        <a href="puppys.html" data-translate="puppies">Our Puppies</a>
+
+        <a href="foto-galerij.html" class="active" data-translate="gallery">
+            Photo Gallery
+        </a>
+
+        <a href="over-ons.html" data-translate="about">About Us</a>
+
+        <a href="news.html" class="news-nav-link">
+            <span class="news-label" data-translate="news">News</span>
+            <span class="news-badge">NEW!</span>
+        </a>
+
+        <a href="contact.html" data-translate="contact">Contact</a>
+
+    </nav>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo-container">
+
+            <img src="images/logo.jpg" alt="Haus Esposito Logo">
+
+            <div>
+                <h1>Haus Esposito</h1>
+                <p data-translate="breed">German Shepherds</p>
+            </div>
+
+        </div>
+
+        <div class="language-selector">
+
+            <select id="languageSelect" onchange="setLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="nl">Nederlands</option>
+                <option value="de">Deutsch</option>
+                <option value="it">Italiano</option>
+            </select>
+
+        </div>
+
+    </header>
+
+
+    <!-- MENU BUTTON -->
+
+    <div class="menu-bar">
+
+        <button id="menuBtn">☰</button>
+
+    </div>
+
+
+    <!-- PAGE HERO -->
+
+    <section class="page-hero">
+
+        <div class="page-hero-content">
+
+            <p class="eyebrow">HAUS ESPOSITO</p>
+
+            <h1 data-translate="gallery">Photo Gallery</h1>
+
+            <p data-translate="galleryText">
+                A collection of photos and videos of our German Shepherds.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PHOTO GALLERY -->
+
+    <main class="gallery-page">
+
+        <section class="gallery-section">
+
+            <div class="gallery-title">
+
+                <p class="eyebrow" data-translate="photosLabel">PHOTOS</p>
+
+                <h2 data-translate="galleryDogsTitle">
+                    Our dogs in pictures
+                </h2>
+
+            </div>
+
+
+            <div class="photo-grid">
+
+
+                <!-- PHOTO 1 -->
+
+                <figure class="photo-card">
+
+                    <img
+                        src="images/queen1.jpg"
+                        alt="Queen, German Shepherd"
+                    >
+
+                    <figcaption>
+
+                        <div class="media-info">
+
+                            <span class="media-dog">
+                                Dog: Queen
+                            </span>
+
+                            <span class="media-date">
+                                Date: September 2026
+                            </span>
+
+                        </div>
+                    </figcaption>
+
+                </figure>
+
+
+                <!-- PHOTO 2 -->
+
+                <figure class="photo-card">
+
+                    <img
+                        src="images/wito_klein.jpg"
+                        alt="German Shepherd Wito"
+                    >
+
+                    <figcaption>
+
+                        <div class="media-info">
+
+                            <span class="media-dog">
+                                Dog: Wito
+                            </span>
+
+                            <span class="media-date">
+                                Date: July 2026
+                            </span>
+
+                        </div>
+                    </figcaption>
+
+                </figure>
+
+                
+            </div>
+
+        </section>
+
+
+        <!-- VIDEOS -->
+
+        <section class="video-section">
+
+            <div class="gallery-title">
+
+                <p class="eyebrow" data-translate="videosLabel">VIDEOS</p>
+
+                <h2 data-translate="videoSectionTitle">
+                    Moments in motion
+                </h2>
+
+                <p data-translate="videoSectionText">
+                    Watch videos of our dogs during different moments and activities.
+                </p>
+
+            </div>
+
+
+            <div class="video-grid">
+
+
+                <!-- VIDEO 1 -->
+
+                <figure class="video-card">
+
+                    <video controls>
+
+                        <source
+                            src="videos/queen_vid1.mp4"
+                            type="video/mp4"
+                        >
+
+                        Your browser does not support this video.
+
+                    </video>
+
+                    <figcaption>
+
+                        <div class="media-info">
+
+                            <span class="media-dog">
+                                Dog: Queen
+                            </span> 
+
+                            <span class="media-date">
+                                Date: August 2026
+                            </span>
+                        </div>
+
+                        <h3>Queen in action</h3>
+                        <p>
+                            First Protection Work Session in Italy. Working with Centro Cinofilo delle Rose
+                        </p>
+
+                    </figcaption>
+
+                </figure>
+
+
+                <!-- VIDEO 2 -->
+
+                <figure class="video-card">
+
+                    <video controls>
+
+                        <source
+                            src="videos/queen_vid2.mp4"
+                            type="video/mp4"
+                        >
+
+                        Your browser does not support this video.
+
+                    </video>
+
+                    <figcaption>
+
+                        <div class="media-info">
+
+                            <span class="media-dog">
+                                Dog: Queen
+                            </span>
+                            <span class="media-date">
+                                Date: August 2026
+                            </span>
+                        </div>
+
+                        <h3>Queen in action</h3>
+
+                        <p>
+                            First Protection Work Session in Italy. Working with Centro Cinofilo delle Rose
+                        </p>
+
+                    </figcaption>
+
+                </figure>
+
+
+                <!-- VIDEO 3 -->
+
+                <figure class="video-card">
+
+                    <video controls>
+
+                        <source
+                            src="videos/queen_vid3.mp4"
+                            type="video/mp4"
+                        >
+
+                        Your browser does not support this video.
+
+                    </video>
+
+                    <figcaption>
+
+                        <div class="media-info">
+
+                            <span class="media-dog">
+                                Dog: Queen
+                            </span>
+                            <span class="media-date">
+                                Date: August 2026
+                            </span>
+
+                        </div>
+                        <h3>Queen in action</h3>
+                        <p>
+                            First Protection Work Session in Italy. Working with Centro Cinofilo delle Rose
+                        </p>
+
+                    </figcaption>
+
+                </figure>
+
+
+                <!-- VIDEO 4 -->
+
+                <figure class="video-card">
+
+                    <video controls>
+
+                        <source
+                            src="videos/queen_vid4.mp4"
+                            type="video/mp4"
+                        >
+
+                        Your browser does not support this video.
+
+                    </video>
+
+                    <figcaption>
+
+                        <div class="media-info">
+
+                            <span class="media-dog">
+                                Dog: Queen
+                            </span>
+
+                            <span class="media-date">
+                                Date: August 2026
+                            </span>
+
+                        </div>
+
+                        <h3>Queen in action</h3>
+
+                        <p>
+                            First Protection Work Session in Italy. Working with Centro Cinofilo delle Rose
+                        </p>
+
+                    </figcaption>
+
+                </figure>
+                
+                <figure class="video-card">
+
+                    <video controls>
+
+                        <source
+                            src="videos/queen_vid5.mp4"
+                            type="video/mp4"
+                        >
+
+                        Your browser does not support this video.
+
+                    </video>
+
+                    <figcaption>
+
+                        <div class="media-info">
+
+                            <span class="media-dog">
+                                Dog: Queen
+                            </span>
+
+                            <span class="media-date">
+                                Date: August 2026
+                            </span>
+
+                        </div>
+
+                        <h3>Queen in action</h3>
+
+                        <p>
+                            First Protection Work Session in Italy. Working with Centro Cinofilo delle Rose
+                        </p>
+
+                    </figcaption>
+
+                </figure>
+
+                <figure class="video-card">
+
+                    <video controls>
+
+                        <source
+                            src="videos/wito_vid1.mp4"
+                            type="video/mp4"
+                        >
+
+                        Your browser does not support this video.
+
+                    </video>
+
+                    <figcaption>
+
+                        <div class="media-info">
+
+                            <span class="media-dog">
+                                Dog: Wito
+                            </span>
+
+                            <span class="media-date">
+                                Date: July 2026
+                            </span>
+
+                        </div>
+
+                        <h3>Wito's SV evaluation</h3>
+
+                        <p>
+                            Wito takes part in the SV evaluation and demonstrates his abilities.
+                            He received an "Excellent" rating and a positive assessment from the judge.
+                        </p>
+
+                    </figcaption>
+
+                </figure>
+
+                <figure class="video-card">
+
+                    <video controls>
+
+                        <source
+                            src="videos/wito_vid2.mp4"
+                            type="video/mp4"
+                        >
+
+                        Your browser does not support this video.
+
+                    </video>
+
+                    <figcaption>
+
+                        <div class="media-info">
+
+                            <span class="media-dog">
+                                Dog: Wito
+                            </span>
+
+                            <span class="media-date">
+                                Date: Ocotber 2026
+                            </span>
+
+                        </div>
+
+                        <h3>Wito's KORUNG evaluation</h3>
+
+                        <p>
+                            KORUNG in Traunstein, Bayern-Sud Germany. Judge: Christian Schalk
+                        </p>
+
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <img
+                    src="images/logo.jpg"
+                    class="footer-logo"
+                    alt="Haus Esposito"
+                >
+            </div>
+
+            <div>
+
+                <h3 data-translate="contact">Contact</h3>
+
+                <p>info@hausesposito.com</p>
+
+                <p>+39 379 144 9435</p>
+
+            </div>
+
+        </div>
+
+        <div class="copyright" data-translate="footerRights">
+            All rights reserved.
+        </div>
+
+    </footer>
+
+
+    <!-- SCRIPTS -->
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
