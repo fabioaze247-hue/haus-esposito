@@ -2068,3 +2068,62 @@ footer {
         font-size: .8rem;
     }
 }
+
+/* =========================================
+   FIX WITO-FOTO
+   Behoud de oorspronkelijke beeldverhouding
+========================================= */
+
+.dog-header img.profile-pic,
+img.profile-pic {
+    display: block !important;
+    width: 250px !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    aspect-ratio: auto !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    flex-shrink: 0 !important;
+}
+
+/* =========================================
+   FIX MOBIELE HEADER
+   Vertaalkeuze niet over HAUS ESPOSITO
+========================================= */
+
+@media (max-width: 768px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .logo-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .language-selector {
+        position: relative !important;
+        top: auto !important;
+        right: auto !important;
+        left: auto !important;
+        transform: none !important;
+        align-self: flex-end;
+        margin: 8px 15px 0 auto !important;
+        z-index: 20;
+    }
+
+    .dog-header img.profile-pic,
+    img.profile-pic {
+        width: 250px !important;
+        max-width: 75vw !important;
+        height: auto !important;
+        aspect-ratio: auto !important;
+        object-fit: contain !important;
+    }
+}
