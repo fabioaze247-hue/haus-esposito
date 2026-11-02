@@ -2138,3 +2138,172 @@ footer {
         object-fit: contain !important;
     }
 }
+
+/* ========================================
+   PEDIGREE VIEWER
+======================================== */
+
+.pedigree-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.pedigree-actions button {
+    display: inline-block;
+    padding: 12px 22px;
+    background: #111;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.pedigree-actions button:hover {
+    background: #c7a86d;
+    color: #111;
+    transform: translateY(-2px);
+}
+
+.pedigree-viewer {
+    width: min(1000px, 90%);
+    max-width: 90%;
+    max-height: 90vh;
+    padding: 25px;
+    margin: auto;
+    border: 1px solid #c7a86d;
+    border-radius: 12px;
+    background: #111;
+    overflow: auto;
+}
+
+.pedigree-viewer::backdrop {
+    background: rgba(0, 0, 0, .85);
+}
+
+.pedigree-viewer img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.pedigree-close {
+    display: block;
+    margin: 0 0 15px auto;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    background: #c7a86d;
+    color: #111;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.pedigree-close:hover {
+    background: #ad8d54;
+}
+
+/* ========================================
+   HOMEPAGE - ABOUT US & CONTACT PREVIEWS
+======================================== */
+
+.about-preview,
+.contact-preview {
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-preview {
+    background: #f5f5f5;
+}
+
+.contact-preview {
+    background: #d7d0d0;
+}
+
+.preview-container {
+    width: min(1000px, 90%);
+    padding: 55px 60px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, .08);
+}
+
+.contact-preview .preview-container {
+    background: white;
+    border: 1px solid rgba(199, 168, 109, .3);
+}
+
+.preview-container h2 {
+    font-size: 2.3rem;
+    margin: 12px 0 20px;
+    color: #111;
+}
+
+.contact-preview .preview-container h2 {
+    color: black;
+}
+
+.preview-container p {
+    max-width: 750px;
+    color: black;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+.contact-preview .preview-container p {
+    color: #bbb;
+}
+
+.preview-btn {
+    display: inline-block;
+    padding: 13px 25px;
+    background: #c7a86d;
+    color: #111;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 8px;
+    transition: .3s ease;
+}
+
+.preview-btn:hover {
+    background: #ad8d54;
+    transform: translateY(-3px);
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+    .about-preview,
+    .contact-preview {
+        padding: 45px 0;
+    }
+
+    .preview-container {
+        width: 90%;
+        padding: 35px 25px;
+    }
+
+    .preview-container h2 {
+        font-size: 1.8rem;
+    }
+
+    .preview-container p {
+        font-size: 1rem;
+    }
+
+    .preview-btn {
+        display: inline-block;
+        max-width: 100%;
+        text-align: center;
+    }
+}

@@ -135,13 +135,28 @@
                 More information
             </button>
 
-                <a href="images/wito-pedigree.jpeg"
-                class="pedigree-download"
-                download="WITO_Cevaro_Pedigree.jpeg">
+            <div class="pedigree-actions">
+
+                <button
+                    type="button"
+                    class="pedigree-download"
+                    onclick="openPedigree()"
+                >
+                    View Pedigree
+                </button>
+
+                <a
+                    href="images/wito-pedigree.jpeg"
+                    class="pedigree-download"
+                    download="WITO_Cevaro_Pedigree.jpg"
+                >
                     <span data-translate="downloadPedigreeImage">
                         Download Pedigree
                     </span>
                 </a>
+
+            </div>
+
 
             <!-- WITO DETAILS -->
 
@@ -255,11 +270,15 @@
 
 </section>
 
-    <footer class="site-footer">
+
+<!-- FOOTER -->
+
+<footer class="site-footer">
 
     <div class="footer-main">
 
         <!-- BRANDING -->
+
         <div class="footer-brand">
 
             <img
@@ -275,8 +294,10 @@
             </p>
 
         </div>
-        
+
+
         <!-- CONTACT -->
+
         <div class="footer-column">
 
             <h3 data-translate="contact">CONTACT</h3>
@@ -295,8 +316,9 @@
 
         </div>
 
-        
+
         <!-- SOCIAL MEDIA & PROFILES -->
+
         <div class="footer-column">
 
             <h3 data-translate="footerFollowUs">FOLLOW US</h3>
@@ -327,11 +349,11 @@
 
         </div>
 
-
     </div>
 
 
     <!-- COPYRIGHT -->
+
     <div class="footer-bottom">
 
         <p>
@@ -348,29 +370,45 @@
 </footer>
 
 
-
 <!-- PEDIGREE VIEWER -->
 
-<div id="pedigreeViewer" style="display:none;">
+<dialog id="pedigreeViewer" class="pedigree-viewer">
 
-    <img src="images/pedigrees/wito-pedigree.jpg" alt="Wito's official pedigree">
+    <button
+        type="button"
+        class="pedigree-close"
+        onclick="closePedigree()"
+        aria-label="Close pedigree viewer"
+    >
+        &times;
+    </button>
 
-    <button onclick="closePedigree()">Close</button>
+    <img
+        src="images/wito-pedigree.jpeg"
+        alt="Wito's official pedigree"
+    >
 
-</div>
+</dialog>
 
 
-<!-- SCRIPTS -->
+<!-- PEDIGREE VIEWER SCRIPT -->
 
 <script>
+
 function openPedigree() {
-    document.getElementById("pedigreeViewer").style.display = "flex";
+    const viewer = document.getElementById("pedigreeViewer");
+    viewer.showModal();
 }
 
 function closePedigree() {
-    document.getElementById("pedigreeViewer").style.display = "none";
+    const viewer = document.getElementById("pedigreeViewer");
+    viewer.close();
 }
+
 </script>
+
+
+<!-- SCRIPTS -->
 
 <script src="translations.js"></script>
 <script src="script.js"></script>
