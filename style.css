@@ -2070,27 +2070,21 @@ footer {
 }
 
 /* =========================================
-   FIX WITO-FOTO
-   Behoud de oorspronkelijke beeldverhouding
+   WITO - FOTO BEHOUDT ORIGINELE VERHOUDING
 ========================================= */
 
-.dog-header img.profile-pic,
-img.profile-pic {
-    display: block !important;
-    width: 250px !important;
-    max-width: 100% !important;
+.dog-header .profile-pic {
+    display: block;
+    width: 250px;
+    max-width: 100%;
     height: auto !important;
-    min-height: 0 !important;
-    max-height: none !important;
     aspect-ratio: auto !important;
     object-fit: contain !important;
-    object-position: center !important;
-    flex-shrink: 0 !important;
+    flex: 0 0 auto;
 }
 
 /* =========================================
-   FIX MOBIELE HEADER
-   Vertaalkeuze niet over HAUS ESPOSITO
+   MOBIELE HEADER - GEEN OVERLAPPING
 ========================================= */
 
 @media (max-width: 768px) {
@@ -2098,30 +2092,47 @@ img.profile-pic {
     header {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        position: relative;
+        align-items: stretch;
+        gap: 12px;
+        padding: 18px 15px;
     }
 
     .logo-container {
         width: 100%;
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .logo-container h1 {
+        font-size: clamp(1.2rem, 5vw, 1.5rem);
+        white-space: nowrap;
     }
 
     .language-selector {
-        position: relative !important;
-        top: auto !important;
-        right: auto !important;
-        left: auto !important;
-        transform: none !important;
+        position: static !important;
         align-self: flex-end;
-        margin: 8px 15px 0 auto !important;
-        z-index: 20;
+        margin: 0 5px 0 0 !important;
+        z-index: 10;
     }
 
-    .dog-header img.profile-pic,
-    img.profile-pic {
-        width: 250px !important;
-        max-width: 75vw !important;
+    .language-selector select {
+        min-width: 125px;
+        max-width: 145px;
+    }
+
+    .dog-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .dog-header .profile-pic {
+        width: 250px;
+        max-width: 85%;
         height: auto !important;
         aspect-ratio: auto !important;
         object-fit: contain !important;
